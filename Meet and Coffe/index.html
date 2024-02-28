@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet & Coffee</title>
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta name="author" content="Tamara López">
-    <meta name="description" content="Tómemonos una cosita para aprender">
-    <meta name="keywords" content="Charlas, eventos, simposios, tecnología y Cowork">
+    <meta name="description" content="Tomémonos una cosita para aprender">
+    <meta name="keywords" content="charlas, eventos, simposios, tecnoligías, co-work">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    <nav>
         <ul>
-            <li>
-                <a href="#"><img src="assets/img/coffee-cup.svg" alt="imagen coffe cup" width="50px" /></a>
-            </li>
+            <li><a href="#"><img src="assets/img/coffee-cup.svg" alt="imagen coffe cup" width="50rem"></a></li>
             <li><a href="#">Ubicación</a></li>
-            <li><a href="#">Próxima charla</a></li>
+            <li><a href="#">Próxima Charla</a></li>
             <li><a href="#">Eventos Anteriores</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Contáctanos</a></li>
         </ul>
-    </div>
-    <div>
-        <img src="assets/img/bg-hero.png" alt="fondo hero section" width="100%">
-        <h1>Descubramos tecnología tomandonos una cosita</h1>
-        <h2>Charlas, eventos y simposios sobre tecnología</h2>
-    </div>
-    <div><img src="assets/img/we-work.jpg" alt="imagen we work" width="50%" />
+    </nav>
+    <header class="rubik-light">
+        <h1>Déscubramos tecnología tomándonos una cosita</h1>
+        <h2>Charlas, Eventos y simposios sobre tecnología</h2>
+    </header>
+    <section class="blueviolet" id="verde">
+        <img src="assets/img/we-work.jpg" alt="imagen we work" width="50%">
         <h2>¿Dónde nos juntamos?</h2>
         <p>
-        Todos los martes y viernes, de 19:00 a 22:00 en We Work, Calle Baker
-        133,Providencia, Santiago. 
+            Todos los martes y viernes, de 19.00 a 22.00 horas en We Work, calle baker 133, Providencia, Santiago.
         </p>
-    </div>
+    </section>
+    <section id="Eventos-Anteriores">
+        <h2>Eventos Anteriores</h2>
+        <div class="row">
+        <div>  
+        <img src="assets/img/simposio-vegan.jpg"/>
+        </div>
+        <div>
+        <h3>Simposio VeganDB</h3>
+        <img src="assets/img/machine-learning.jpg"/>
+            </div>
+        <div> 
+        <h3>Machine learning 101</h3>
+        <img src="assets/img/scrum-sin-scream.jpg"/>
+        <h3>Scrum sin scream</h3>
+            </div>
+        </div>
+        </section>
+    <footer>
+        <p>cense 2024</p>
+    </footer>
 </body>
 </html>
